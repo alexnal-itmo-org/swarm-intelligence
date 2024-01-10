@@ -1,12 +1,9 @@
 pub struct Ant {
-    rel_pos_x: u8,
-    rel_pos_y: u8,
-    life_time: u16,
-    food_taken: u16,
+    pub(crate) rel_pos_x: i32,
+    pub(crate) rel_pos_y: i32,
+    pub(crate) dg_fluctuation: f32,
+    pub(crate) dg_view: f32,
+    pub(crate) life_time: u32,
+    pub(crate) food_taken: u32,
 }
 
-impl Ant {
-    pub fn run(&self) {
-        //TODO: life cycle
-    }
-}

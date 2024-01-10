@@ -31,10 +31,9 @@ fn main() {
 
     let mut world = init_world(16, 16);
 
-    println!("World.run");
-    world.run();
-    println!("World.run-end");
-
+    world.add_ant(0,0);
+    world.add_ant(0,0);
+    println!("{}", world.get_chunk(0, 0).unwrap().ants.get(1).unwrap().dg_fluctuation);
     let mut ant_sprite = CircleShape::default();
     ant_sprite.set_radius(3.);
     ant_sprite.set_outline_thickness(3.);
